@@ -18,8 +18,6 @@ public class Problem11 {
 
     }
 
-
-
     public static void fillArray(ArrayList<ArrayList<Integer>> matrix) {
         try (
                 InputStream fis = new FileInputStream(dataFile);

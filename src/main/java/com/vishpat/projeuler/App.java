@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        new Problem11().solve();
+        new Problem25().solve();
     }
 }
