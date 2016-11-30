@@ -10,8 +10,8 @@ import java.util.*;
 
 public class Problem15 {
 
-    private final int COLS = 10;
-    private final int ROWS = 10;
+    private final int COLS = 7;
+    private final int ROWS = 7;
 
     public Problem15() {
 
