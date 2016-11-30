@@ -10,8 +10,8 @@ import java.util.*;
 
 public class Problem15 {
 
-    private final int COLS = 2;
-    private final int ROWS = 2;
+    private final int COLS = 10;
+    private final int ROWS = 10;
 
     public Problem15() {
 
@@ -47,6 +47,8 @@ public class Problem15 {
             }
             pathSet = newPaths;
         }
+
+        System.out.println(pathSet.size());
     }
 
 
@@ -108,6 +110,7 @@ public class Problem15 {
                 if (c1.equals(c2) == false) {
                     return false;
                 }
+                i++;
             }
 
             return false;
