@@ -10,15 +10,18 @@ import java.util.*;
 
 public class Problem15 {
 
-    private final int COLS = 7;
-    private final int ROWS = 7;
+    private final int COLS = 4;
+    private final int ROWS = 4;
 
     public Problem15() {
 
     }
 
-
     public void solve() {
+        solveBFS();
+    }
+
+    public void solveBFS() {
 
         Path path = new Path();
         path.append(new Coordinate(0,0));
