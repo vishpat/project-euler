@@ -10,15 +10,34 @@ import java.util.*;
 
 public class Problem15 {
 
-    private final int COLS = 4;
-    private final int ROWS = 4;
+    private final int COLS = 20;
+    private final int ROWS = 20;
 
     public Problem15() {
 
     }
 
     public void solve() {
-        solveBFS();
+        solveDynamic();
+    }
+
+    public void solveDynamic() {
+        long[][] pathCount = new long[ROWS + 1][COLS + 1];
+
+        int i = 0;
+        for (i = 0; i < ROWS + 1; i++) {
+            pathCount[i][0] = 1;
+            pathCount[0][i] = 1;
+        }
+
+        int j;
+        for (i = 1; i < ROWS + 1; i++) {
+            for (j = 1; j < COLS + 1; j++) {
+                pathCount[i][j] = pathCount[i][j - 1] + pathCount[i - 1][j];
+            }
+        }
+
+        System.out.println(pathCount[ROWS][COLS]);
     }
 
     public void solveBFS() {
